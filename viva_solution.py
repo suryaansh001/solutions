@@ -1,11 +1,11 @@
-#name=input("enter your name")
-#dd=int(input("enter your birth date (dd)"))
-#mm=int(input("enter your birth month (mm)"))
+name=input("enter your name")
+dd=int(input("enter your birth date (dd)"))
+mm=int(input("enter your birth month (mm)"))
 #mm=int(mm)#handling the 0 case 
-#yyyy=int(input("enter your birth year (yyyy)"))
+yyyy=int(input("enter your birth year (yyyy)"))
 
 address=input("enter your address : ")
-#city=input("enter your city : ")
+city=input("enter your city : ")
 
 
 
@@ -141,6 +141,8 @@ def check_simialr(address,dd,mm,yyyy):
     return same
 
 
+
+
 def check_divisiblity(dd,mm,yyyy):
     summ_ofyear=0
     dob=str(dd)+str(mm)+str(yyyy)
@@ -155,6 +157,12 @@ def check_divisiblity(dd,mm,yyyy):
         print(f"{dob} is divisible by sum of digits of year  that is  {summ_ofyear}")
     else:
         print("none of them is  divisible")
+
+
+
+
+
+
 def patternn_printing(dd):
     if dd%2==0:
         n = int(input("Enter the number of levels for the pyramid: "))
@@ -176,6 +184,11 @@ def patternn_printing(dd):
                 print(i + j, end=" ")
     
             print()
+
+
+
+
+
 
 def replacechar(address):
     vowels = "aeiou"
@@ -205,4 +218,3 @@ def replacechar(address):
 
     return new_address
 
-print(replacechar(address))
